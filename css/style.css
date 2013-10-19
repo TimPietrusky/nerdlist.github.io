@@ -1,0 +1,417 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Black);
+/** 
+ * Colors 
+ */
+/* best gray in the world. */
+/* angelhack red */
+/**
+ * Lists
+ */
+/** 
+ * Units 
+ */
+.helper__alpha {
+  text-align: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: 1rem/1.65rem "Open Sans", sans-serif;
+  background: white;
+}
+
+a {
+  color: #38edfb;
+  text-decoration: none;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+a:hover {
+  color: #f33634;
+}
+
+h2 {
+  font: 3em "Archivo Black", sans-serif;
+  margin: .55em 0 0 0;
+  padding: 0 .25em;
+  color: white;
+  background: #f33634;
+}
+
+form {
+  width: 100%;
+}
+
+input[type="email"] {
+  border: 0.15em solid #222222;
+  width: 100%;
+  font-size: 2.5em;
+}
+input[type="submit"] {
+  font-size: 1em;
+}
+
+/**
+ *
+ * $SITE-HEADER
+ *
+ */
+.site__header {
+  width: 100%;
+  height: auto;
+  padding: 10em 0;
+  background: url("http://farm8.staticflickr.com/7346/9054789119_a9ec2d2a68_h.jpg");
+  background-position: -20%;
+  background-size: cover;
+}
+
+.site__header--inner {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.site--title {
+  font: 6em/1.4em "Archivo Black", sans-serif;
+  background: black;
+  color: #f33634;
+  display: inline;
+  padding: .1em .3em;
+  -webkit-animation: damagedSign linear 2s infinite;
+  -moz-animation: damagedSign linear 2s infinite;
+  -o-animation: damagedSign linear 2s infinite;
+  animation: damagedSign linear 2s infinite;
+}
+@media (max-width: 60em) {
+  .site--title {
+    font-size: 2em;
+  }
+}
+
+@-webkit-keyframes damagedSign {
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+@-moz-keyframes damagedSign {
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+@-o-keyframes damagedSign {
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+@keyframes damagedSign {
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+/**
+ *
+ * $CONTENT
+ *
+ */
+.content {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  background: white;
+  color: #222222;
+}
+.content p {
+  padding: 0.5em 0;
+  font-size: 1.25em;
+  line-height: 1.55em;
+}
+.content article:nth-child(1) h2 {
+  background: #f33634;
+}
+.content article:nth-child(2) h2 {
+  background: #f36634;
+}
+.content article:nth-child(3) h2 {
+  background: #f39534;
+}
+.content article:nth-child(4) h2 {
+  background: #f3c534;
+}
+
+.box__alpha {
+  padding: 2em 0 2em 1.5em;
+}
+.box__alpha article:first-child h2 {
+  margin-top: 0;
+}
+@media (max-width: 60em) {
+  .box__alpha {
+    padding-right: 1.5em;
+  }
+}
+
+.box__beta {
+  width: 100%;
+  height: 25em;
+  position: relative;
+}
+
+.signup__container {
+  margin-left: .5em;
+}
+
+.hacker, .sponsor {
+  letter-spacing: 0;
+  display: inline;
+  width: 50%;
+}
+
+.hacker {
+  background: #f33634;
+  color: #750807;
+  border: none;
+  border-bottom: .2em solid #750807;
+}
+.hacker:hover {
+  background: #750807;
+  color: #f33634;
+  border-bottom: .2em solid #f33634;
+}
+
+.sponsor {
+  background: #38edfb;
+  color: #026f78;
+  border-bottom: .2em solid #026f78;
+  margin-left: .5em;
+}
+.sponsor:hover {
+  background: #026f78;
+  color: #38edfb;
+  border-bottom: .2em solid #38edfb;
+}
+
+.btn--sign-up {
+  padding: 1.15em 1.5em;
+  margin-top: 0;
+}
+.btn--sign-up:active {
+  padding: .8em 1.5em 1.2em 1.5em;
+  margin-top: .5em;
+  border-bottom: none;
+}
+
+.sign-up--devider {
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  padding: .2em;
+  margin: -7.8em;
+  letter-spacing: 0;
+  background: #fff;
+}
+
+/**
+ *
+ * Footer
+ *
+ */
+.site__footer {
+  width: 100%;
+  max-width: 60em;
+  height: auto;
+  margin: 0 auto;
+  color: #fff;
+  background: #222222;
+  padding: 1em;
+}
