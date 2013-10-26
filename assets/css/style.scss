@@ -1,0 +1,442 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Black);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
+
+
+@mixin animation($value) {
+  -webkit-animation: unquote($value);
+     -moz-animation: unquote($value);
+       -o-animation: unquote($value);
+          animation: unquote($value);
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+     @-moz-keyframes #{$name} { @content; }
+       @-o-keyframes #{$name} { @content; }
+          @keyframes #{$name} { @content; }
+}
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 85em) { @content; }
+  }
+  @if $point == medium {
+    @media (max-width: 85em) { @content; }
+  }
+  @if $point == small {
+    @media (max-width: 60em) { @content; } 
+  }
+}
+
+
+
+
+
+/** 
+ * Colors 
+ */
+$emw--color-alpha: #222; /* best gray in the world. */
+$emw--color-beta: #f33634; /* angelhack red */
+$emw--color-gamma: #fff;
+$emw--color-delta: lighten(#04bbc9,20%);
+$emw--color-epsilon: 0;
+
+
+/**
+ * Lists
+ */
+$emw--list-alpha: 
+  $emw--color-beta, 
+  adjust-color($emw--color-beta, $hue: 15%),
+  adjust-color($emw--color-beta, $hue: 30%),
+  adjust-color($emw--color-beta, $hue: 45%) 
+;
+
+
+/** 
+ * Units 
+ */
+$emw--unit-alpha: .5em;
+$emw--unit-beta: 1em;
+$emw--unit-gamma: 1.5em;
+$emw--unit-delta: 2em;
+$emw--unit-epsilon: 2.5em;
+
+
+$baseFont: 'Open Sans', sans-serif;
+$font--alpha: 'Archivo Black', sans-serif;
+
+
+.helper__alpha {
+  text-align: right;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  
+  @include box-sizing(border-box);
+}
+
+html, 
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: 1rem/1.65rem $baseFont;
+  background: $emw--color-gamma;
+}
+
+a {
+  color: $emw--color-delta;
+  text-decoration: none;
+  
+  @include transition(color .25s ease-in-out);
+  
+  &:hover {
+    color: $emw--color-beta;
+  }
+}
+
+
+h2 {
+  font: 3em $font--alpha;
+  margin: .55em 0 0 0;
+  padding: 0 .25em;
+  color: $emw--color-gamma;
+  background: $emw--color-beta;
+}
+
+form {
+  width: 100%;
+  letter-spacing: -0.31em;
+}
+
+input {
+  &[type="email"] {
+    width: 80%;
+    font-size: 1.5em;
+    padding:.5em 1em;
+    display:inline-block;
+    letter-spacing: 0;
+    border:none;
+    border-bottom: 1px solid $emw--color-alpha;
+
+    &:focus {
+      outline:0;
+    }
+  }
+
+  &[type="submit"] {
+    font-size: 1em;
+    width:19%;
+
+    display:inline-block;
+    letter-spacing: 0;
+    @include appearance(none);
+  }
+}
+
+
+
+
+
+/**
+ *
+ * $SITE-HEADER
+ *
+ */
+.site__header {
+  width:100%;
+  height:auto;
+  padding:10em 0;
+  background: url("http://farm8.staticflickr.com/7346/9054789119_a9ec2d2a68_h.jpg");
+  background-position: -20%;
+  background-size: cover;
+}
+
+.site__header--inner {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  
+}
+
+.site--title {
+  font: 6em/1.4em $font--alpha;
+  background: darken($emw--color-alpha,15%);
+  color: $emw--color-beta;
+  display: inline;
+  padding:.1em .3em;
+  
+  @include animation(damagedSign linear 2s infinite);
+  
+  @include breakpoint(small) {
+    font-size: 2em;
+  }
+}
+
+@include keyframes (damagedSign) {
+  0% {
+    background:darken($emw--color-alpha,15%);
+    color:$emw--color-beta;
+  }
+
+  15% {    
+    background:white;
+    color:black;
+    text-shadow: 
+        .1em 0 $emw--color-beta,
+        -.05em 0 $emw--color-delta;
+  }
+
+  20% {
+    background:darken($emw--color-alpha,15%);
+    color:$emw--color-beta;
+  }
+
+  26% {    
+    background:white;
+    color:black;
+    text-shadow: 
+        -.1em 0 $emw--color-beta,
+        .1em 0 $emw--color-delta;
+
+  }
+
+  30% {
+    background:darken($emw--color-alpha,15%);
+    color:$emw--color-beta;
+    text-shadow:0 0 0 transparent;
+  }
+
+  35% {    
+    background:white;
+    color:black;
+    text-shadow: 
+        -.1em 0 $emw--color-beta,
+        .1em 0 $emw--color-delta;
+
+  }
+  
+  50% {
+    background:darken($emw--color-alpha,15%);
+    color:$emw--color-beta;
+    text-shadow:0 0 0 transparent;
+  }
+
+  100% {
+    background:darken($emw--color-alpha,15%);
+    color:$emw--color-beta;
+    text-shadow:0 0 0 transparent;
+  }
+}
+
+
+
+
+
+/**
+ *
+ * $CONTENT
+ *
+ */
+.content {
+  width:100%;
+  max-width:60em;
+  margin: 0 auto;
+  background: $emw--color-gamma;
+  color: $emw--color-alpha;
+  
+  p {
+    padding: $emw--unit-alpha 0;
+    font-size: 1.25em;
+    line-height: 1.55em;
+  }
+
+  article {
+  
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        h2 {
+          background: nth($emw--list-alpha, $i);
+        }
+      }
+    }
+  }
+}
+
+
+
+.box__alpha {
+  padding: 2em 0 2em 1.5em;
+  
+  article {
+    &:first-child {
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  
+  @include breakpoint(small) {
+    padding-right: 1.5em;
+  }
+}
+
+.box__beta { 
+  width: 100%;
+  height: 25em;
+  position: relative;
+}
+
+
+
+/* circled mail icon */
+.ui--last-article {
+  margin-top: 4em;
+  padding-top:3em;
+  border-top:1px solid #ccc;
+
+  
+    &:before {
+      content: "\2709";
+      font-family: 'entypo', sans-serif;
+      font-size: 50px;
+      padding-top:42px;
+      padding-left: 28px;
+      width:72px;
+      height:58px;
+      margin-left:-25px;
+      position: absolute;
+      top:-55px;
+      left:50%;
+      background: $emw--color-beta;
+      color:white;
+
+      @include border-radius(100%);
+    }
+}
+
+
+
+
+.input--container {
+  width: 100%;
+  height: auto;
+  padding:.5em;
+}
+
+
+.btn--sign-up {
+  padding: 1.15em 1em;
+  background:$emw--color-beta;
+  border:none;
+  margin-left:.5em;
+
+
+    &:active {
+    padding:.8em 1.5em 1.2em 1.5em;
+    border-bottom:none;
+  }
+}
+
+.sign-up--devider {
+  display: inline-block;
+  @include border-radius(100%);
+  padding:.2em;
+  margin:-7.8em;
+  letter-spacing:0;
+  background:#fff;
+}
+
+
+
+
+/**
+ *
+ * Footer
+ *
+ */
+.site__footer {
+  width:100%;
+  max-width:60em;
+  height:auto;
+  margin:0 auto;
+  color:#fff;
+  background:$emw--color-alpha;
+  padding:$emw--unit-beta;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 50em) {
+
+input {
+  &[type="email"] {
+    width: 100%;
+    font-size: 1.5em;
+    padding:.5em 1em;
+    display:block;
+    letter-spacing: 0;
+    border:none;
+    border-bottom: 1px solid $emw--color-alpha;
+
+    &:focus {
+      outline:0;
+    }
+  }
+
+  &[type="submit"] {
+    font-size: 1em;
+    width:100%;
+
+    display:inline-block;
+    letter-spacing: 0;
+    @include appearance(none);
+  }
+}
+
+
+
+  .btn--sign-up {
+  width:100%;
+  display: block;
+  padding: 1.15em 1em;
+  background:$emw--color-beta;
+  border:none;
+  margin:1em 0;
+
+
+    &:active {
+    padding:1.15em 1em;
+    margin-top: 1.3em;
+    border-bottom:none;
+  }
+}
+}

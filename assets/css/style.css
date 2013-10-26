@@ -1,0 +1,545 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Black);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+/* line 7, style.scss */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/** 
+ * Colors 
+ */
+/* best gray in the world. */
+/* angelhack red */
+/**
+ * Lists
+ */
+/** 
+ * Units 
+ */
+/* line 79, style.scss */
+.helper__alpha {
+  text-align: right;
+}
+
+/* line 86, style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 95, style.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 100, style.scss */
+body {
+  font: 1rem/1.65rem "Open Sans", sans-serif;
+  background: white;
+}
+
+/* line 105, style.scss */
+a {
+  color: #38edfb;
+  text-decoration: none;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+/* line 111, style.scss */
+a:hover {
+  color: #f33634;
+}
+
+/* line 117, style.scss */
+h2 {
+  font: 3em "Archivo Black", sans-serif;
+  margin: .55em 0 0 0;
+  padding: 0 .25em;
+  color: white;
+  background: #f33634;
+}
+
+/* line 125, style.scss */
+form {
+  width: 100%;
+  letter-spacing: -0.31em;
+}
+
+/* line 131, style.scss */
+input[type="email"] {
+  width: 80%;
+  font-size: 1.5em;
+  padding: .5em 1em;
+  display: inline-block;
+  letter-spacing: 0;
+  border: none;
+  border-bottom: 1px solid #222222;
+}
+/* line 140, style.scss */
+input[type="email"]:focus {
+  outline: 0;
+}
+/* line 145, style.scss */
+input[type="submit"] {
+  font-size: 1em;
+  width: 19%;
+  display: inline-block;
+  letter-spacing: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/**
+ *
+ * $SITE-HEADER
+ *
+ */
+/* line 164, style.scss */
+.site__header {
+  width: 100%;
+  height: auto;
+  padding: 10em 0;
+  background: url("http://farm8.staticflickr.com/7346/9054789119_a9ec2d2a68_h.jpg");
+  background-position: -20%;
+  background-size: cover;
+}
+
+/* line 173, style.scss */
+.site__header--inner {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+/* line 180, style.scss */
+.site--title {
+  font: 6em/1.4em "Archivo Black", sans-serif;
+  background: black;
+  color: #f33634;
+  display: inline;
+  padding: .1em .3em;
+  -webkit-animation: damagedSign linear 2s infinite;
+  -moz-animation: damagedSign linear 2s infinite;
+  -o-animation: damagedSign linear 2s infinite;
+  animation: damagedSign linear 2s infinite;
+}
+@media (max-width: 60em) {
+  /* line 180, style.scss */
+  .site--title {
+    font-size: 2em;
+  }
+}
+
+@-webkit-keyframes damagedSign {
+  /* line 195, style.scss */
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 200, style.scss */
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  /* line 208, style.scss */
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 213, style.scss */
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 222, style.scss */
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 228, style.scss */
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 237, style.scss */
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 243, style.scss */
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+@-moz-keyframes damagedSign {
+  /* line 195, style.scss */
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 200, style.scss */
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  /* line 208, style.scss */
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 213, style.scss */
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 222, style.scss */
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 228, style.scss */
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 237, style.scss */
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 243, style.scss */
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+@-o-keyframes damagedSign {
+  /* line 195, style.scss */
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 200, style.scss */
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  /* line 208, style.scss */
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 213, style.scss */
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 222, style.scss */
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 228, style.scss */
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 237, style.scss */
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 243, style.scss */
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+@keyframes damagedSign {
+  /* line 195, style.scss */
+  0% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 200, style.scss */
+  15% {
+    background: white;
+    color: black;
+    text-shadow: 0.1em 0 #f33634, -0.05em 0 #38edfb;
+  }
+
+  /* line 208, style.scss */
+  20% {
+    background: black;
+    color: #f33634;
+  }
+
+  /* line 213, style.scss */
+  26% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 222, style.scss */
+  30% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 228, style.scss */
+  35% {
+    background: white;
+    color: black;
+    text-shadow: -0.1em 0 #f33634, 0.1em 0 #38edfb;
+  }
+
+  /* line 237, style.scss */
+  50% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+
+  /* line 243, style.scss */
+  100% {
+    background: black;
+    color: #f33634;
+    text-shadow: 0 0 0 transparent;
+  }
+}
+
+/**
+ *
+ * $CONTENT
+ *
+ */
+/* line 259, style.scss */
+.content {
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  background: white;
+  color: #222222;
+}
+/* line 266, style.scss */
+.content p {
+  padding: 0.5em 0;
+  font-size: 1.25em;
+  line-height: 1.55em;
+}
+/* line 276, style.scss */
+.content article:nth-child(1) h2 {
+  background: #f33634;
+}
+/* line 276, style.scss */
+.content article:nth-child(2) h2 {
+  background: #f36634;
+}
+/* line 276, style.scss */
+.content article:nth-child(3) h2 {
+  background: #f39534;
+}
+/* line 276, style.scss */
+.content article:nth-child(4) h2 {
+  background: #f3c534;
+}
+
+/* line 286, style.scss */
+.box__alpha {
+  padding: 2em 0 2em 1.5em;
+}
+/* line 291, style.scss */
+.box__alpha article:first-child h2 {
+  margin-top: 0;
+}
+@media (max-width: 60em) {
+  /* line 286, style.scss */
+  .box__alpha {
+    padding-right: 1.5em;
+  }
+}
+
+/* line 303, style.scss */
+.box__beta {
+  width: 100%;
+  height: 25em;
+  position: relative;
+}
+
+/* circled mail icon */
+/* line 312, style.scss */
+.ui--last-article {
+  margin-top: 4em;
+  padding-top: 3em;
+  border-top: 1px solid #ccc;
+}
+/* line 318, style.scss */
+.ui--last-article:before {
+  content: "\2709";
+  font-family: 'entypo', sans-serif;
+  font-size: 50px;
+  padding-top: 42px;
+  padding-left: 28px;
+  width: 72px;
+  height: 58px;
+  margin-left: -25px;
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  background: #f33634;
+  color: white;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+}
+
+/* line 340, style.scss */
+.input--container {
+  width: 100%;
+  height: auto;
+  padding: .5em;
+}
+
+/* line 347, style.scss */
+.btn--sign-up {
+  padding: 1.15em 1em;
+  background: #f33634;
+  border: none;
+  margin-left: .5em;
+}
+/* line 354, style.scss */
+.btn--sign-up:active {
+  padding: .8em 1.5em 1.2em 1.5em;
+  border-bottom: none;
+}
+
+/* line 360, style.scss */
+.sign-up--devider {
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  padding: .2em;
+  margin: -7.8em;
+  letter-spacing: 0;
+  background: #fff;
+}
+
+/**
+ *
+ * Footer
+ *
+ */
+/* line 377, style.scss */
+.site__footer {
+  width: 100%;
+  max-width: 60em;
+  height: auto;
+  margin: 0 auto;
+  color: #fff;
+  background: #222222;
+  padding: 1em;
+}
+
+@media all and (max-width: 50em) {
+  /* line 401, style.scss */
+  input[type="email"] {
+    width: 100%;
+    font-size: 1.5em;
+    padding: .5em 1em;
+    display: block;
+    letter-spacing: 0;
+    border: none;
+    border-bottom: 1px solid #222222;
+  }
+  /* line 410, style.scss */
+  input[type="email"]:focus {
+    outline: 0;
+  }
+  /* line 415, style.scss */
+  input[type="submit"] {
+    font-size: 1em;
+    width: 100%;
+    display: inline-block;
+    letter-spacing: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  /* line 427, style.scss */
+  .btn--sign-up {
+    width: 100%;
+    display: block;
+    padding: 1.15em 1em;
+    background: #f33634;
+    border: none;
+    margin: 1em 0;
+  }
+  /* line 436, style.scss */
+  .btn--sign-up:active {
+    padding: 1.15em 1em;
+    margin-top: 1.3em;
+    border-bottom: none;
+  }
+}
